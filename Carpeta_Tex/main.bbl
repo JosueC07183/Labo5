@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{web}
+Nordic Infocenter.
+\newblock nrf52840 datasheet.
+\newblock Nordic Infocenter,
+  \url{https://infocenter.nordicsemi.com/pdf/nRF52840_PS_v1.1.pdf}, Mayo 2019.
+\newblock Accedido en febrero de 2024.
+
+\bibitem{web2}
+Arduino Docs.
+\newblock Arduino nano 33 ble.
+\newblock Arduino Docs,
+  \url{https://docs.arduino.cc/resources/datasheets/ABX00030-datasheet.pdf},
+  Mayo 2019.
+\newblock Accedido en febrero de 2024.
+
+\end{thebibliography}
