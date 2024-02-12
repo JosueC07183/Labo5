@@ -60,8 +60,24 @@ Aquí se tomaron dos referencias para tener más claro este detalle,  primero se
 
 
 \subsection*{Periféricos utilizados}
-%Aqui se debe hablar de mcu nRF52480.
-\subsection*{Componentes electrónicos complementarios}
+En este laboratorio no se utilizaron periféricos externos, además, el único sensor que se utilizó es el giroscopio de 9 ejes que viene incorporado en el Arduino Nano 33 BLE. A continuación se presentan los puntos más importantes de este sensor (LSM9DS1) para realizar este laboratorio \cite{giroscopio}:
+\begin{itemize}
+    \item 3 canales de aceleración, 3 canales de velocidad angular, 3 canales de campo magnético.
+    \item ±2/±4/±8/±16 g aceleración lineal escala completa.
+    \item ±245/±500/±2000 dps velocidad angular escala completa.
+    \item Salida de datos de 16 bits.
+    \item Interfaces serie SPI / I2C.
+    \item Tensión de alimentación analógica 1,9 V a 3,6 V.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.55\linewidth]{Imagenes/k1.png}
+    \caption{Diagrama de pines del LSM9DS1, tomado de \cite{giroscopio}.}
+    \label{k1}
+\end{figure}
+
+
 \subsection*{Lista de componentes}
 \begin{table}[H]
 \caption{Lista de equipos}
@@ -71,9 +87,9 @@ Aquí se tomaron dos referencias para tener más claro este detalle,  primero se
 \hline
 \textbf{Componente}&\textbf{Cantidad}&\textbf{Precio}\\
  \hline
---&--&-- \\ \hline 
+Arduino Nano 33 BLE & 1 & 60\$ \\ \hline 
 
- \textbf{Total}& & -- \\
+ \textbf{Total}& & 60\$ \\
  \hline
 \end{tabular}
 \end{center}
@@ -82,5 +98,5 @@ Aquí se tomaron dos referencias para tener más claro este detalle,  primero se
 \subsection*{Diseño del circuito}
 El diseño del circuito es muy simple ya que basta con conectar el arduino nano 33 ble sense a la computadora por medio de un cable USB, tal como se muestra en la figura \ref{fig4}.
 \input{sch1.tex}
-A partir de lo mostrado anteriormente se consultaron las referencias dadas por el profesor para realizar el labarotorio.
+A partir de lo mostrado anteriormente se consultaron las referencias dadas por el profesor para realizar el laboratorio.
 \newpage

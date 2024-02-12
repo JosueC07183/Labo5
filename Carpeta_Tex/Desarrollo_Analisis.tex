@@ -28,5 +28,43 @@ Se tomaron 1750 muestras para los 3 movimientos, un aproximado de \SI{25}{\s} re
 % \label{fig_gyro}
 %\end{figure}
 
+Para el entrenamiento se tomaron los resultados obtenidos y se procedió a usar como base el ejemplo de reconocimiento de gestos dado en la presentación de la clase \cite{web4}.
+El primer paso fue introducir los datos, el resultado de esto se observa a continuación:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.65\linewidth]{Imagenes/k (1).jpg}
+    \caption{Datos de aceleración importados.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.65\linewidth]{Imagenes/k (2).jpg}
+    \caption{Datos del giroscopio importado.}
+\end{figure}
+
+Una vez realizado este paso se empieza a entrenar el modelo, para ello se preparan los datos para que su formato coincida, una vez realizado lo anterior se entrena la red siguiendo las indicaciones del enunciado y tomando el 60\% de los datos para el entrenamiento, un 20\% para la validación y otro 20\% para realizar pruebas. Los resultados del entrenamiento se muestran en las siguientes figuras:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.65\linewidth]{Imagenes/k (3).jpg}
+    \caption{Gráfica del entrenamiento y su pérdida.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.65\linewidth]{Imagenes/k (4).jpg}
+    \caption{Gráfica del entrenamiento y su pérdida iniciando en 100.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.65\linewidth]{Imagenes/k (5).jpg}
+    \caption{Gráfica del error absoluto para observar rendimiento.}
+\end{figure}
+
+Con lo anterior se obtiene un archivo de encabezado ''model.h'' que es usado para poder determinar los movimientos escogidos para este laboratorio.\\
+
+Los resultados del modelo creado y usado para este laboratorio se encuentran en las siguientes figuras:
+
+% REV, meter imagenes de la prueba de movimiento aqui
 
 \newpage
