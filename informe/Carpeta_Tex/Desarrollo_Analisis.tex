@@ -63,8 +63,6 @@ Una vez realizado este paso se empieza a entrenar el modelo, para ello se prepar
 
 Con lo anterior se obtiene un archivo de encabezado ''model.h'' que es usado para poder determinar los movimientos escogidos para este laboratorio.\\
 
-Los resultados del modelo creado y usado para este laboratorio se encuentran en las siguientes figuras:
-
 Ahora, gracias al entrenamiento realizado y siguiendo con la ayuda de los ejemplos vistos en clase, se toma la referencia de \cite{ArduinoSketches1} a la cual se le hacen unas pequeñas modificaciones, primero se le añade el archivo \texttt{model.h} para ver los resultados del entramiento pero ahora en la placa.
 Lo otro es la eliminación de algunos encabezados que no serán necesarios ya que el profesor indicó que son más orientados a los desarrolladores de tensorflow tales como: \texttt{tensorflow/lite/micro/micro\_error\_ reporter.h} y \texttt{tensorflow/lite/version.h}. También se eliminó la variable global \texttt{tflite::MicroErrorReporter tflErrorReporter} y el acceso a la memoria de esta misma variable. Por otro, lado se tuvo que añadir los mapas de los gestos:\newpage
 \begin{lstlisting}[label={mini_bloque}, caption={Nombre de los archivos csv}]
