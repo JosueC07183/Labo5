@@ -101,6 +101,8 @@ void setup() {
 
 void loop() {
   float aX, aY, aZ, gX, gY, gZ;
+  int maxIndex = 0; // Guarda la posicion del gesto predecido
+  float MovPredecido = tflOutputTensor->data.f[0]; // Movimiento con mayor probabilidad calculado
 
   // wait for significant motion
   while (samplesRead == numSamples) {
@@ -154,7 +156,19 @@ void loop() {
           Serial.print(GESTURES[i]);
           Serial.print(": ");
           Serial.println(tflOutputTensor->data.f[i], 6);
+
+          // Guardar el dato con mayor probabilidad
+          if (tflOutputTensor->data.f[i] > MovPredecido) {
+              MovPredecido = tflOutputTensor->data.f[i];
+              maxIndex = i; // Update the index of the maximum probability
+          }
         }
+        
+        // Imprimir movimiento predecido
+        Serial.print("El movimiento predecido es: ");
+        Serial.print(GESTURES[maxIndex]);
+        Serial.print(": ");
+        Serial.println(MovPredecido, 6);
         Serial.println();
       }
     }
